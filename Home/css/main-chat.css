@@ -1,0 +1,329 @@
+html {
+	box-sizing: border-box;
+}
+
+*,*:before, *:after { 
+	box-sizing: inherit;
+}
+
+/* Style the navigation bar */
+
+/* aside{
+    display: block;
+    float: right;
+    max-width: 1400;
+    width: 25%;
+} */
+
+nav {
+  display: flex;
+  justify-content: space-around;
+  size: 40px;
+  align-items: center;
+  height: 80px;
+  color: #1b0303;
+  padding: 0 20px;
+  background-color:rgb(67, 159, 196)195, 211, 211;
+  box-shadow: 0px 2px 5px rgba(0, 0, 0, 0.1);
+  z-index: 100;
+}
+
+
+.search-icon {
+    display: none;
+    position:relative;
+    right: 0;
+    top: 0;
+    padding: 10px;
+    border: none;
+    border-radius: 50%; /* this is the detemining factor for the  */
+    background-color: #110101;
+    color: white;
+    cursor: pointer;
+    font-size: 30px;
+}
+
+/* Style the logo in the navigation bar */
+nav img {
+  height: 50px;
+  border-radius: 50%;
+  width: 50px;
+}
+
+nav img:hover {
+    background-color: #9c9191;
+    border-radius: 50%;
+}
+
+.home-icon, .profile-icon,
+.notification-bell, .messages {
+    font-size: 22px;
+}
+
+.home-icon:hover {
+    color: aquamarine;
+}
+
+.profile-icon:hover {
+   color:yellowgreen;
+    /* padding: 15px; */
+ }
+.notification-bell:hover {
+    color: aliceblue;
+}
+
+.messages:hover {
+    color: yellow;
+}
+
+
+
+header {
+    background-color: #c1d6bb;
+    /* border-radius: 0px; */
+    justify-content: space-between;
+    z-index: 1;
+    margin: 0 auto;
+    width: 100%;
+    padding: 10px;
+    display: flex;
+    align-items: center;
+    box-shadow: 0px 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+
+/* Search bar container */
+.jh-searchbox {
+  position: relative;
+  margin: 0;
+  max-width: 400px;
+}
+
+/* Search bar input field */
+.jh-searchbox input[type="text"] {
+  width: calc(100% - 80px);
+  padding: 12px 20px;
+  margin: 0;
+  box-sizing: border-box;
+  border: none;
+  /* border-radius: 25px 25px -25px; */
+  border-radius: 0 0 0 15px;
+  background-color: #f2f2f2;
+  font-size: 16px;
+}
+
+/* Search button */
+.jh-searchbox button {
+  position:relative;
+  right: 0;
+  top: 0;
+  padding: 12px 30px;
+  border: none;
+  border-radius: 0 20px 0 0; /* this is the detemining factor for the  */
+  background-color: #9c9191;
+  color: white;
+  font-size: 16px;
+  cursor: pointer;
+}
+
+/* Search button hover effect */
+.jh-searchbox button:hover {
+  background-color: #c45a5a;
+}
+
+
+/* *********************Media styling for screen <= 600*********************** */
+@media (max-width: 600px){
+    nav {
+        display:flex;
+        position: fixed;
+        flex-direction: column;
+        justify-content:left;
+        size: 40px;
+        align-items:flex-start;
+        height: 90vh;
+        width: 50px;
+        color: #690404;
+        padding: 0 20px;
+        background-color:rgb(140, 197, 219)195, 211, 211;
+        box-shadow:none;
+        z-index: 100;
+    }
+    nav img {
+        height: 30px;
+        border-radius: 50%;
+        width: 30px;
+        margin: 0 auto;
+    }
+    
+    .home-icon, .profile-icon,
+    .notification-bell, .messages {
+        font-size: 20px;
+        margin: 40px 0;
+    }
+    
+    header {
+        background-color: #ffff;
+        border-radius: 5px;
+        justify-content: space-between;
+        z-index: 100;
+        margin: 5px;
+        padding: 10px;
+        display: flex;
+        position: fixed;
+        align-items: center;
+        justify-items: center;
+        justify-content: center;
+    }
+    
+    /* Search bar container */
+    .jh-searchbox {
+        display: none;
+        position: relative;
+        margin: 0 40px;
+        max-width: 400px;
+    }
+    
+    /* Search bar input field */
+    .jh-searchbox input[type="text"] {
+        width: calc(100% - 80px);
+        padding: 12px 20px;
+        margin: 0;
+        box-sizing: border-box;
+        border: none;
+        border-radius: 0 0 0 15px;
+        background-color: #f2f2f2;
+        font-size: 16px;
+    }
+    
+    
+    /* Search button */
+    .jh-searchbox button {
+        position:relative;
+        display: flex;
+        right: 0;
+        top: 0;
+        padding: 12px 30px;
+        border: none;
+        border-radius: 0 20px 0 0; /* this is the detemining factor for the  */
+        background-color: #9c9191;
+        color: white;
+        font-size: 16px;
+        cursor: pointer;
+    }
+    
+    
+    .search-icon {
+        display: block;
+        position:relative;
+        /* right: 0;
+        top: 0; */
+        padding: 10px;
+        border: none;
+        border-radius: 50%; /* this is the detemining factor for the  */
+        background-color: #520707;
+        color: white;
+        cursor: pointer;
+        font-size: 5px;
+        margin: 40px 0;
+    }
+    
+    
+    /* Search button hover effect */
+    .jh-searchbox button:hover {
+        background-color: #c45a5a;
+    }
+}
+
+
+/* ****************Media <=400px******************* */
+
+@media (max-width: 400px){
+    nav {
+        display:none;
+        flex-direction: column;
+        justify-content:left;
+        size: 40px;
+        align-items:flex-start;
+        height:100vh;
+        width: 70px;
+        color: #690404;
+        padding: 0 20px;
+        background-color:rgb(140, 197, 219)195, 211, 211;
+        box-shadow: 0px 2px 5px rgba(0, 0, 0, 0.1);
+        z-index: 100;
+    }
+
+/* Style the logo in the navigation bar */
+nav img {
+    display: flex;
+    height: 50px;
+    border-radius: 50%;
+    width: 50px;
+    margin: 0 auto;
+    align-items: center;
+    justify-content: center;
+}
+
+.home-icon, .profile-icon,
+.notification-bell, .messages {
+    font-size: 30px;
+    margin: 40px 0;
+    display: none;
+}
+/* Search bar container */
+.jh-searchbox {
+    display: none;
+    position: relative;
+    margin: 0 40px;
+    max-width: 400px;
+}
+
+/* Search bar input field */
+.jh-searchbox input[type="text"] {
+  width: calc(100% - 80px);
+  padding: 12px 20px;
+  margin: 0;
+  box-sizing: border-box;
+  border: none;
+  border-radius: 0 0 0 15px;
+  background-color: #f2f2f2;
+  font-size: 16px;
+}
+
+/* Search button */
+.jh-searchbox button {
+  position:relative;
+  display: flex;
+  right: 0;
+  top: 0;
+  padding: 12px 30px;
+  border: none;
+  border-radius: 0 20px 0 0; /* this is the detemining factor for the  */
+  background-color: #9c9191;
+  color: white;
+  font-size: 16px;
+  cursor: pointer;
+}
+
+.search-icon {
+    display: flex;
+    position:relative;
+    right: 0;
+    top: 0;
+    padding: 10px;
+    border: none;
+    border-radius: 50%; /* this is the detemining factor for the  */
+    background-color: #520707;
+    color: white;
+    cursor: pointer;
+    font-size: 30px;
+    margin: 40px 0;
+}
+
+/* Search button hover effect */
+.jh-searchbox button:hover {
+  background-color: #c45a5a;
+}
+
+}

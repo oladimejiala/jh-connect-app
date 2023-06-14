@@ -1,0 +1,6 @@
+1.Choose a web development framework or library, such as React or Flask, to build your web app.
+2.Set up a GitHub repository for your app and clone it to your local machine.
+3.Write the code for your app, using HTML, CSS, and JavaScript (if applicable), and use a backend framework or library, such as Node.js or Django, to handle user data and authentication.
+4.Test your app locally to make sure it works as expected.
+5.Commit your code changes to your local Git repository, and push them to the GitHub repository using Git commands.
+6.Deploy your app to a hosting platform, such as Heroku or Netlify, or use GitHub Pages to host it directly from your GitHub repository.

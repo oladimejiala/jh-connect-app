@@ -1,0 +1,11 @@
+.profile-icon {
+    font-size: 23px;
+}
+
+.profile-icon li {
+    display:none;
+}
+
+.profile-list li a {
+   text-decoration: none;
+}

@@ -1,0 +1,33 @@
+#menu-button {
+  background-color: transparent;
+  border: none;
+  cursor: pointer;
+  height: 40px;
+  padding: 0;
+  position: relative;
+  width: 40px;
+}
+
+.menu-icon,
+.menu-icon::before,
+.menu-icon::after {
+  background-color: #333;
+  content: "";
+  display: block;
+  height: 2px;
+  position: absolute;
+  width: 100%;
+}
+
+.menu-icon::before {
+  top: -10px;
+}
+
+.menu-icon::after {
+  bottom: -10px;
+}
+
+#menu-items {
+  display: list-item;
+  list-style: none;
+}

@@ -1,0 +1,22 @@
+.container {
+  display: flex;
+  justify-content: space-between;
+}
+
+.sidebar-right {
+  width: 25%;
+}
+
+.main {
+  width: 50%;
+}
+
+/* Optional styles for responsive design */
+@media screen and (max-width: 768px) {
+  .container {
+    flex-direction: column;
+  }
+  .sidebar, .main {
+    width: 100%;
+  }
+}

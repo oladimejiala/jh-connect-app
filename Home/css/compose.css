@@ -1,0 +1,227 @@
+/* .post-section {
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 20px;
+}
+
+.post {
+  background-color: #ffffff;
+  border: 1px solid #e8e8e8;
+  border-radius: 4px;
+  box-shadow: 0 1px 2px rgba(0, 0, 0, 0.06);
+  display: flex;
+  flex-direction: column;
+  padding: 12px;
+}
+
+.user-info {
+  display: flex;
+  align-items: center;
+  margin-bottom: 10px;
+}
+
+.user-avatar {
+  border-radius: 50%;
+  margin-right: 10px;
+}
+
+.user-text {
+  display: flex;
+  flex-direction: column;
+}
+
+.user-name {
+  font-weight: bold;
+}
+
+.user-handle {
+  color: #999999;
+}
+
+.post-text {
+  margin-top: 10px;
+}
+
+.compose {
+  background-color: #010f01;
+  border: none;
+  color: white;
+  padding: 8px 12px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+  height: 60px;
+  width: 60px;
+  right: 30px;
+  bottom: 30px;
+  position: fixed;
+  margin-bottom: 20px;
+  border-radius: 50%;.compose:hover {
+  transform: scale(1.1);
+  box-shadow: 0 0 20px rgba(0, 0, 0, 0.4);
+}
+
+.compose-mode textarea {
+  width: 100%;
+  height: 100px;
+  padding: 12px 20px;
+  box-sizing: border-box;
+  border: 2px solid #cabcbc;
+  border-radius: 4px;
+  background-color: #eeeeee;
+  resize: none;
+  font-size: 16px;
+}
+
+.compose-mode input[type="text"],
+.compose-mode textarea {
+  display: block;
+  margin-bottom: 20px;
+}
+
+.compose-mode input[type="text"] {
+  width: 100%;
+  padding: 12px 20px;
+  box-sizing: border-box;
+  border: 2px solid #ccc;
+  border-radius: 4px;
+  background-color: #f8f8f8;
+  font-size: 16px;
+}
+
+.submit-button {
+  background-color: #020f18;
+  color: white;
+  border: none;
+  border-radius: 20px;
+  padding: 8px 16px;
+  font-size: 16px;
+  cursor: pointer;
+  margin-top: 8px;
+}
+
+.compose-mode .submit-button {
+  /* background-color: #4c77af; */
+  /* border: none; */
+  /* color: white; */
+  /* padding: 20px; */
+  /* width: 50px; */
+  /* justify-content: center;
+  text-align: center;
+  text-decoration: none;
+  display:none;
+  font-size: 16px;
+  margin-bottom: 20px;
+  border-radius: 10px;
+  cursor: pointer;
+} */
+
+/* 
+
+
+
+/* *************New Compose Styling************ */
+
+
+.post-container {
+  display:flex;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  padding: 10px;
+  margin: 20px;
+  background-color: #fff;
+  width: 80%;
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 20px;
+}
+
+.post-message {
+  background-color: #ffffff;
+  border: 1px solid #e8e8e8;
+  border-radius: 4px;
+  box-shadow: 0 1px 2px rgba(34, 33, 33, 0.06);
+  display: flex;
+  flex-direction: row-reverse;
+  width: fit-content;
+  max-width: 80%;
+  padding: 12px;
+}
+
+.user-info {
+  display: flex;
+  align-items: center;
+  margin-bottom: 10px;
+}
+
+.user-avatar {
+  border-radius: 50%;
+  margin-right: 10px;
+}
+
+.user-text {
+  display: flex;
+  flex-direction: column;
+}
+
+.user-name {
+  font-weight: bold;
+}
+
+.user-handle {
+  color: #999999;
+}
+
+.post-text {
+  margin-top: 10px;
+}
+
+.compose {
+  background-color: #4CAF50;
+  border: none;
+  color: white;
+  padding: 8px 12px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+  height: 60px;
+  width: 60px;
+  right: 30px;
+  bottom: 30px;
+  position: fixed;
+  margin-bottom: 20px;
+  border-radius: 50%;
+}
+
+.compose:hover {
+  transform: scale(1.1);
+  box-shadow: 0 0 20px rgba(0, 0, 0, 0.4);
+  background-color: #3e8e41;
+}
+
+.compose-modal textarea {
+  width: 100%;
+  height: 100px;
+  padding: 12px 20px;
+  box-sizing: border-box;
+  border: 2px solid #ccc;
+  border-radius: 4px;
+  background-color: #f8f8f8;
+  resize: none;
+  font-size: 16px;
+  margin-bottom: 20px;
+}
+
+
+/* End of compose styling */
+
+
+/* **********************************Responsive styling for smaller media devices*************************************** */
+@media(max-width: 600px){
+  compose-button {
+      height: 40px;
+      width: 40px;
+    }
+}
