@@ -86,7 +86,7 @@ async function sendVerificationEmail(toEmail) {
       from: "Your App Name <noreply@appname.com>",
       to: toEmail,
       subject: "Verify Your Email",
-      text: `Your verification code is ${verificationCode}. Please enter this code to complete your registration.`,
+      text: `Your verification code is ${verificationCode}. Please enter this code to complete your registration.`
     };
 
     // send the email
